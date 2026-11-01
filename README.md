@@ -1,8 +1,19 @@
-# Homebrew tap for Klaub
+# Homebrew tap for Klaub (moved)
+
+The klaub formula now lives in the shared tap, like the other tools of
+[myrk-kale](https://github.com/myrk-kale):
 
 ```shell
-brew tap myrk-kale/klaub
-brew install klaub
+brew install myrk-kale/tap/klaub
 ```
 
-Installs the released binary for macOS (Apple Silicon and Intel) and Linux (x86_64 and aarch64).
+If you added this tap earlier, switch with:
+
+```shell
+brew uninstall klaub
+brew untap myrk-kale/klaub
+brew install myrk-kale/tap/klaub
+```
+
+This tap is no longer updated after klaub 0.4.0, so `brew upgrade` here will not
+bring newer versions.
